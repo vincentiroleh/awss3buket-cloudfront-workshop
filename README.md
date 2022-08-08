@@ -6,6 +6,25 @@ The workshop is for all skill levels, attendees will learn how to build and depl
 - Understand the fundamental concepts of AWS S3 Bucket and CloudFront
 - Deploy a static website to AWS S3 Bucket and configure CloudFront
 
+# Bucket Policy
+
+Secure Bucket via IAM
+
+{
+"Version":"2012-10-17",
+"Statement":[
+ {
+   "Sid":"AddPerm",
+   "Effect":"Allow",
+   "Principal": "*",
+   "Action":["s3:GetObject"],
+   "Resource":["arn:aws:s3:::your-website/*"]
+ }
+]
+}
+
+
+
 
 # About Me
 
